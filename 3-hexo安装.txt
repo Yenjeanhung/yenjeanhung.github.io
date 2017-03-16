@@ -1,0 +1,6 @@
+安装
+git clone https://github.com/yelog/hexo-theme-3-hexo.git themes/3-hexo
+
+更新
+cd themes/3-hexo
+git pull
