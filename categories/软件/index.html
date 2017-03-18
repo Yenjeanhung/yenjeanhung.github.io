@@ -2,45 +2,14 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>oracle导出命令exp和导入命令imp的使用 | YanJiaheng的博客</title>
+  <title>YanJiaheng的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="本方介绍使用oracle的exp命令导出数据和imp命令导入数据的具体操作
-导出命令EXP  exp有三种主要的方式（完全、用户、表）
-
-完全模式：
-EXP SYSTEM/MANAGER BUFFER=64000 FILE=C:\FULL.DMP FULL=Y
-
-如果要执行完全导出，必须具有特殊的权限      
-
-用户模式：
-EXP SONIC/SONIC    BUFFER=64000 FIL">
-<meta property="og:type" content="article">
-<meta property="og:title" content="oracle导出命令exp和导入命令imp的使用">
-<meta property="og:url" content="https://yenjeanhung.github.io/2017/03/16/oracle导出命令exp和导入命令imp的使用/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="YanJiaheng的博客">
+<meta property="og:url" content="https://yenjeanhung.github.io/categories/软件/index.html">
 <meta property="og:site_name" content="YanJiaheng的博客">
-<meta property="og:description" content="本方介绍使用oracle的exp命令导出数据和imp命令导入数据的具体操作
-导出命令EXP  exp有三种主要的方式（完全、用户、表）
-
-完全模式：
-EXP SYSTEM/MANAGER BUFFER=64000 FILE=C:\FULL.DMP FULL=Y
-
-如果要执行完全导出，必须具有特殊的权限      
-
-用户模式：
-EXP SONIC/SONIC    BUFFER=64000 FIL">
-<meta property="og:updated_time" content="2017-03-18T03:59:32.635Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="oracle导出命令exp和导入命令imp的使用">
-<meta name="twitter:description" content="本方介绍使用oracle的exp命令导出数据和imp命令导入数据的具体操作
-导出命令EXP  exp有三种主要的方式（完全、用户、表）
-
-完全模式：
-EXP SYSTEM/MANAGER BUFFER=64000 FILE=C:\FULL.DMP FULL=Y
-
-如果要执行完全导出，必须具有特殊的权限      
-
-用户模式：
-EXP SONIC/SONIC    BUFFER=64000 FIL">
+<meta name="twitter:title" content="YanJiaheng的博客">
   
   
     <link rel="icon" href="/img/avatar.jpg">
@@ -69,7 +38,7 @@ EXP SONIC/SONIC    BUFFER=64000 FIL">
   <input class="theme_duoshuo_domain" value="yenjeanhung">
 </div>
 <body>
-<aside class="nav">
+<aside class="nav mobile">
     <div class="nav-left">
         <a href="/" class="avatar" style="background-image:url(/img/avatar.jpg)"></a>
 <div class="author">
@@ -190,44 +159,10 @@ EXP SONIC/SONIC    BUFFER=64000 FIL">
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-oracle导出命令exp和导入命令imp的使用" class="article article-type-post" itemscope itemprop="blogPost">
+        <article class="index">
+            <div class="toc-ref">
     
-        <h1 class="article-title">oracle导出命令exp和导入命令imp的使用</h1>
-    
-    <div class="article-meta">
-        
-        
-        
-        <span class="book">
-            
-            <a href="javascript:" data-rel="数据库">数据库</a>
-            
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a href="javascript:" class="color2">oracle</a>
-            
-        </span>
-        
-    </div>
-    <div class="article-meta">
-        
-        <time class="date" title="2017-03-16 22:07:00">2017-03-16 22:07</time>
-        
-        
-        <span>字数:261</span>
-        
-        
-        <span id="busuanzi_container_page_pv">
-            阅读量:<span id="busuanzi_value_page_pv"></span>
-        </span>
-        
-    </div>
-    <div class="toc-ref">
-    
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#导出命令EXP"><span class="toc-text">导出命令EXP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#导入命令IMP"><span class="toc-text">导入命令IMP</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#博客统计"><span class="toc-text">博客统计</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#博客平台"><span class="toc-text">博客平台</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -240,130 +175,18 @@ EXP SONIC/SONIC    BUFFER=64000 FIL">
     }
 </style>
 </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>本方介绍使用oracle的exp命令导出数据和imp命令导入数据的具体操作</p>
-<h2 id="导出命令EXP"><a href="#导出命令EXP" class="headerlink" title="导出命令EXP"></a>导出命令EXP</h2><p>  exp有三种主要的方式（完全、用户、表）</p>
-<ol>
-<li><p>完全模式：</p>
-<pre><code>EXP SYSTEM/MANAGER BUFFER=64000 FILE=C:\FULL.DMP FULL=Y
-</code></pre><hr>
-<p>如果要执行完全导出，必须具有特殊的权限      </p>
-</li>
-<li><p>用户模式：</p>
-<pre><code>EXP SONIC/SONIC    BUFFER=64000 FILE=C:\SONIC.DMP OWNER=SONIC
-</code></pre><hr>
-<p>这样用户SONIC的所有对象被输出到文件中。</p>
-</li>
-<li><p>表模式：</p>
-<pre><code>EXP SONIC/SONIC    BUFFER=64000 FILE=C:\SONIC.DMP OWNER=SONIC TABLES=(SONIC)
-</code></pre><hr>
-<p>这样用户SONIC的表SONIC就被导出 </p>
-</li>
-</ol>
-<h2 id="导入命令IMP"><a href="#导入命令IMP" class="headerlink" title="导入命令IMP"></a>导入命令IMP</h2><p> imp有三种模式（完全、用户、表）</p>
-<ol>
-<li><p>完全模式：</p>
-<pre><code> IMP SYSTEM/MANAGER BUFFER=64000 FILE=C:\FULL.DMP FULL=Y
-</code></pre><hr>
-</li>
-</ol>
-<ol>
-<li><p>用户模式：</p>
-<pre><code> IMP SONIC/SONIC    BUFFER=64000 FILE=C:\SONIC.DMP FROMUSER=SONIC TOUSER=SONIC
-</code></pre><hr>
-<p>这样用户SONIC的所有对象被导入到文件中。必须指定FROMUSER、TOUSER参数，这样才能导入数据。</p>
-</li>
-<li><p>表模式：</p>
-<pre><code> EXP SONIC/SONIC  BUFFER=64000 FILE=C:\SONIC.DMP OWNER=SONIC TABLES=(SONIC)
-</code></pre><hr>
-<p>这样用户SONIC的表SONIC就被导入。</p>
-</li>
-</ol>
-<p>参考: <a href="http://www.cnblogs.com/yugen/archive/2010/07/25/1784763.html" target="_blank" rel="external">oracle中exp,imp的使用详解</a></p>
+            <p><h1 id="博客统计"><a href="#博客统计" class="headerlink" title="博客统计"></a>博客统计</h1><p>到目前为止已经写了<code class="article_number"></code>篇文章， 共<code class="site_word_count"></code>字。</p></p>
+<p><p>本站访问人数：<code id="busuanzi_value_site_uv"></code>人次 ， 访问量：<code id="busuanzi_value_site_pv"></code>次</p></p>
+<p><h2 id="博客平台"><a href="#博客平台" class="headerlink" title="博客平台"></a>博客平台</h2><p>这个博客通过 <a href="https://hexo.io/">Hexo</a> 生成，部署在 <a href="https://pages.github.com/">GitHub Pages</a>，主题 <a href="https://github.com/yelog/hexo-theme-3-hexo">3-hexo</a> 已经在github上开源</p></p>
+<p><p>主要功能：</p></p>
+<ul><br><li>通过分类（category）展示文章列表</li><br><li>模糊搜索文章标题</li><br><li>搜索支持tag搜索，例如：#Hexo</li><br><li>搜索支持作者搜索，例如：@Yenjeanhung</li><br><li>全屏功能和文章toc显示</li><br><li>评论</li><br><li>pad/手机等移动端适配</li><br></ul>
 
-      
-    </div>
-</article>
-
-<p>
-    <a href="javascript:void(0)" class="dashang" onclick="dashangToggle()">赏</a>
-</p>
-
-
-<div class="article_copyright">
-    <p><span>文章标题:</span>oracle导出命令exp和导入命令imp的使用</p>
-    <p><span>文章字数:</span><span class="post-count">261</span></p>
-    <p><span>本文作者:</span><a href="javascript:void(0)" title="YanJiaheng">YanJiaheng</a></p>
-    <p><span>发布时间:</span>2017-03-16, 22:07:00</p>
-    <p><span>最后更新:</span>2017-03-18, 11:59:32</p>
-    <span>原始链接:</span><a class="post-url" href="/2017/03/16/oracle导出命令exp和导入命令imp的使用/" title="oracle导出命令exp和导入命令imp的使用">https://yenjeanhung.github.io/2017/03/16/oracle导出命令exp和导入命令imp的使用/</a>
-    <p>
-        <span>版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
-    </p>
-</div>
-
-
-    
-        <div class="duoshuo" id="comments">
-    <div id="comment-box" ></div>
-    <div class="ds-thread" id="ds-thread" data-thread-key="2017/03/16/oracle导出命令exp和导入命令imp的使用/" data-title="oracle导出命令exp和导入命令imp的使用" data-url="https://yenjeanhung.github.io/2017/03/16/oracle导出命令exp和导入命令imp的使用/"></div>
-    <script>
-        var duoshuoQuery;
-        function loadComment() {
-            duoshuoQuery = {short_name: $(".theme_duoshuo_domain").val()};
-            var d = document, s = d.createElement('script');
-            s.src = 'https://static.duoshuo.com/embed.js?t='+new Date().getTime();
-            s.async = true; s.charset = 'UTF-8';
-            (d.head || d.body).appendChild(s);
-        }
+        </article>
         
-        // Add comment count
-        $(function(){
-            var jsonUrl = "http://api.duoshuo.com/threads/counts.jsonp?short_name=yenjeanhung&threads=2017/03/16/oracle导出命令exp和导入命令imp的使用/&callback=?";
-            $.getJSON(jsonUrl, function(result){
-                $.each(result.response, function(i, field){
-                    var value = field.comments;
-                    if (value > 0) {
-                        $(".count-comment").text(value);
-                        return;
-                    }
-                })
-            })
-        })
+        <p>
+            <a href="javascript:void(0)" class="dashang" onclick="dashangToggle()">赏</a>
+        </p>
         
-    </script>
-    
-    <aside class="comment-bar">
-        <a href="javascript:void(0);">
-            <i class="fa fa-commenting-o animated infinite pulse"></i>
-            <i class="fa fa-spinner fa-pulse"></i>
-            <span class="count-comment"></span>
-        </a>
-    </aside>
-    <script>
-        var $commentBar = $("#comments aside.comment-bar");
-        var load$hide = function(){
-            $commentBar.find("a > i").toggle();
-            
-            pajx_loadDuodsuo();
-            
-            $commentBar.fadeOut(800);
-        }
-        $commentBar.click(function(){
-            load$hide();
-        })
-        $commentBar.children("a").mouseenter(function(){
-            load$hide();
-        })
-        if (window.location.hash === "#comments") {
-            load$hide();
-        }
-    </script>
-
-</div>
-    
-
     </div>
     <div class="copyright">
         <p class="footer-entry">©2017 Yenjeanhung</p>
