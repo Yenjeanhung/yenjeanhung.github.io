@@ -65,9 +65,6 @@ div.ac > ul.tag > li:before {
   font-size: 14px;
   margin-top: 4px;
 }
-#comments {
-  padding: 0 40px;
-}
 #comments .comment-bar {
   display: block;
   cursor: pointer;
@@ -838,7 +835,6 @@ left0px
   clear: both;
   border-top: 1px solid #e5e8ec;
   width: 100%;
-  padding-top: 7px;
   padding-bottom: 10px;
   color: #64717f;
   text-shadow: -1px 1px 0 rgba(125,139,153,0.1);
@@ -873,18 +869,17 @@ left0px
 .nav-right nav a#top:before {
   content: "\f08d";
 }
-.nav-right nav a:hover:before {
-  animation: wobble 1s linear;
-}
-.nav-right nav a#top:hover:before {
+.nav-right nav a.hover:before {
   animation: wobble 1s linear;
 }
 .nav-right nav a .post-title {
-  width: 270px;
+  width: -webkit-calc(100% - 120px);
+  width: -moz-calc(100% - 120px);
+  width: calc(100% - 125px);
   float: left;
   clear: both;
   margin: 5px 0;
-  padding: 0 15px 0 32px;
+  padding-left: 32px;
   font-size: 16px;
   line-height: 22px;
   white-space: nowrap;
@@ -897,7 +892,7 @@ left0px
 .nav-right nav a .post-date {
   font-size: 15px;
   margin: 8px 0px;
-  padding: 0px 3px;
+  padding-right: 3px;
   color: #9aa4af;
   float: right;
 }
@@ -960,6 +955,13 @@ left0px
   color: #bcc1c4;
   border-left: 3px solid #b4b4b4;
   padding-left: 10px;
+}
+.post .pjax article .article-meta .top-comment a {
+  color: inherit;
+}
+.post .pjax article .article-meta .top-comment a:hover {
+  text-decoration: none;
+  cursor: pointer;
 }
 .post .pjax article .article-meta .date:before {
   content: "\e94e";
@@ -1269,6 +1271,24 @@ h6 {
 }
 .nav.fullscreen {
   margin-left: -585px;
+}
+div.img_max {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 50;
+  background: #fff;
+  transition: opacity 0.5s;
+}
+img.img_max {
+  cursor: zoom-out;
+  position: fixed;
+  z-index: 51;
+  transition: top 0.5s, left 0.5s, transform 0.5s, width 0.5s, height 0.5s;
 }
 @media screen and (max-width: 1024px) {
   .nav {
